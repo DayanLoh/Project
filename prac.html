@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Information</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #d3d3d3;
+            display: flex;
+            height: 100vh;
+        }
+        .sidebar {
+            width: 250px;
+            background-color: #0078d4;
+            color: white;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .sidebar h1 {
+            font-size: 20px;
+            margin: 0;
+            margin-bottom: 10px;
+            padding: 10px 0;
+            border-bottom: 1px solid white;
+        }
+        .sidebar .nav-item {
+            display: flex;
+            align-items: center;
+            padding: 15px 0;
+            cursor: pointer;
+            font-size: 15px;
+            margin-bottom: 5px;
+        }
+        .sidebar .nav-item span {
+            margin-left: 20px;
+        }
+        .sidebar .nav-item:hover {
+            background-color: #005bb5;
+            border-radius: 10px;
+        }
+        .sidebar .nav-item.active {
+            background-color: #005bb5;
+            border-radius: 10px;
+        }
+        .sidebar .contact {
+            padding: 20px 0;
+            border-top: 1px solid white;
+            text-align: center;
+        }
+        .sidebar .contact h2 {
+            font-size: 25px;
+            margin: 10px 0;
+        }
+        .sidebar .contact p {
+            font-size: 15px;
+            margin: 5px 0;
+        }
+        .sidebar img {
+            border: none;
+            border-radius: 30px;
+            margin-left: 40%;
+            margin-top: 20%;
+        }
+        .main {
+            flex-grow: 1;
+            padding: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .form-container {
+            background-color: white;
+            border-radius: 30px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 400px;
+        }
+        .form-container h2 {
+            font-weight: bold;
+            font-size: 25px;
+            margin: 20px 0;
+            text-align: center;
+        }
+        .form-container input[type="text"], .form-container input[type="email"] {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 16px;
+        }
+        .form-container .flex-container {
+            display: flex;
+            justify-content: space-between;
+        }
+        .form-container .flex-container input[type="text"] {
+            width: calc(30% - 10px);
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <div>
+            <h1>QUANTUM PROPERTIES</h1>
+            <div class="nav-item" onclick="location.href='overview.html'">
+                <span>Assets Overview</span>
+            </div>
+            <div class="nav-item" onclick="location.href='market.html'">
+                <span>Market Place</span>
+            </div>
+            <div class="nav-item" onclick="location.href='transactions.html'">
+                <span>Transactions</span>
+            </div>
+            <div class="nav-item" onclick="location.href='wallet.html'">
+                <span>Wallet</span>
+            </div>
+            <div class="nav-item active" onclick="location.href='account.html'">
+                <span>Account</span>
+            </div>
+            <div>
+                <img src="images/homeLogo.png" alt="Logo" style="width: 50px; height: 50px;">
+            </div>
+        </div>
+        <div class="contact">
+            <h2>Contact Us</h2>
+            <p>+65 9855 5552</p>
+        </div>
+    </div>
+    <div class="main">
+        <div class="form-container">
+            <h2>Personal Information</h2>
+            <input type="text" placeholder="Full Name">
+            <input type="email" placeholder="Email">
+            <div class="flex-container">
+                <input type="text" placeholder="Day">
+                <input type="text" placeholder="Month">
+                <input type="text" placeholder="Year">
+            </div>
+            <input type="text" placeholder="Phone number">
+        </div>
+    </div>
+</body>
+</html>
+
+
+
